@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.edbhc.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://marufpbt:%40MarufBillahCU20107030@cluster0.edbhc.mongodb.net/marufpbt?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
 
